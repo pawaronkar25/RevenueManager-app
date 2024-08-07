@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=unicode">
+<style type="text/css" title="currentStyle" media="screen">
+		@import "design.css";
+
+</style>
+<script>
+</script>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<table width=100% align=center border=0 class="t11" background="bg2.jpg">
+<tr>
+<td>Revenue Recovery System</td>
+</tr>
+</table><hr color=#510051>
+<table align=left width=20% border=0 class="t12"  height=100% background="bg2.jpg">
+<tr><td><table width=100%  class="t12" background="bg2.jpg">
+<tr><td><A href="addins.jsp">Add-ins</A></td></tr>
+<tr><td><A href="View.jsp">Views</A></td></tr>
+<tr><td><A href="revtgtreport.jsp">Revenue Target Report</A></td></tr>
+<tr><td><A href="ALogout.jsp">Logout</A></td></tr>
+</table><br><br><br><br><br><br><br><br><br><br><br><br>
+</td></tr>
+</table>
+
+</html>

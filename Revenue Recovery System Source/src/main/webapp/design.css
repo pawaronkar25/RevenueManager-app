@@ -1,0 +1,181 @@
+/* CAPTION */
+caption {
+    border: lime thin;
+    font-weight: bold;
+    font-size: 16px;
+    color: midnightblue;
+    background-color: lavenderblush;
+}
+
+/* Common styling for INPUT, SELECT, and TEXTAREA */
+input, select, textarea {
+    font-weight: bold;
+    font-size: 13px;
+    background: #fffff9;
+    font-family: Verdana;
+}
+
+/* A */
+a {
+    font-weight: lighter;
+    font-size: 13px;
+    color: white;
+    font-family: 'Palatino Linotype';
+}
+
+/* A:link */
+a:link {
+    font-size: 13px;
+    color: ivory;
+    font-family: 'Palatino Linotype';
+    text-decoration: none;
+}
+
+/* A:visited */
+a:visited {
+    color: lemonchiffon;
+    text-decoration: none;
+}
+
+/* A:hover */
+a:hover {
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+/* A:active */
+a:active {
+    font-size: 13px;
+    color: white;
+    font-family: 'Palatino Linotype';
+    text-decoration: underline;
+}
+
+/* Class t1 */
+.t1 {
+    text-align: left;
+}
+
+/* Class t2 */
+.t2 {
+    font-size: 15px;
+    color: white;
+    font-family: 'Palatino Linotype';
+}
+
+/* Class t3 */
+.t3 {
+    font-size: 35px;
+    color: #ccff33;
+    font-style: italic;
+    font-family: 'Palatino Linotype';
+}
+
+/* Class pass */
+.pass {
+    font-size: 20px;
+    background-image: url(file://C:\Program Files\Apache Software Foundation\Tomcat 5.0\webapps\eBanking\bg7.jpg);
+    color: white;
+    font-family: 'Palatino Linotype';
+    text-align: center;
+}
+
+/* Class fail */
+.fail {
+    font-size: 20px;
+    color: white;
+    font-family: 'Palatino Linotype';
+    background-color: #ff0000;
+    text-align: center;
+}
+
+/* Class t4 */
+.t4 {
+    font-size: 15px;
+    color: white;
+    font-family: 'Palatino Linotype';
+    background-color: #666699;
+}
+
+/* Class t11 */
+.t11 {
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    font-family: 'Palatino Linotype';
+}
+
+/* Class t12 */
+.t12 {
+    font-size: 15px;
+    color: white;
+    font-family: 'Palatino Linotype';
+}
+
+/* EM */
+em {
+    font-size: 20px;
+    color: white;
+    font-family: 'Palatino Linotype';
+}
+
+/* Class t5 */
+.t5 {
+    font-size: 25px;
+    background-image: url(file://C:\Program Files\Apache Software Foundation\Tomcat 5.0\webapps\eBanking\bg3.jpg);
+    color: white;
+    font-family: 'Palatino Linotype';
+    text-align: left;
+}
+
+/* Class t6 */
+.t6 {
+    font-size: 15px;
+    background-image: none;
+    color: midnightblue;
+    background-repeat: repeat;
+    font-family: 'Palatino Linotype';
+    background-color: whitesmoke;
+    text-align: left;
+}
+
+/* Class r */
+.r {
+    font-size: 15px;
+    background-image: url(file://C:\Documents and Settings\Administrator\Desktop\backgrounds\bg2.jpg);
+    color: white;
+    font-family: 'Palatino Linotype';
+}
+
+/* Class th1 */
+.th1 {
+    font-size: 15px;
+    color: white;
+    font-family: 'Palatino Linotype';
+    background-color: #666699;
+}
+
+/* Class cap2 */
+.cap2 {
+    border: lime thin;
+    font-weight: bold;
+    font-size: 16px;
+    color: yellow;
+    background-color: #666666;
+}
+
+/* Class rad */
+.rad {
+    font-size: 15px;
+    color: white;
+    font-family: 'Palatino Linotype';
+    background-color: #666699;
+}
+
+/* Class t7 */
+.t7 {
+    font-size: 15px;
+    color: darkblue;
+    font-family: 'Palatino Linotype';
+    background-color: lightyellow;
+}

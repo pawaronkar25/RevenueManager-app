@@ -1,0 +1,36 @@
+<style type="text/css" title="currentStyle" media="screen">
+		@import "design.css";
+</style>
+<jsp:useBean id="veb" class="com.rr.beans.RevTgtSaveBean"/>
+<table width=100% align=center border=0 class="t11" background="bg2.jpg">
+<tr>
+<td>Revenue Recovery System</td>
+</tr>
+</table><hr color=#510051>
+<table width=70% align=center border=1 class="t6"><tr><td>
+<table  align=center class="t6" border=1 width=100%>
+<caption class="cap2">Revenue Target Report</caption>
+<tr class="th1">
+<th>District</th>
+<th>Division</th>
+<th>Mandal</th>
+<th>Village</th>
+<th>Revenue Year</th>
+<th>Revenue Head</th>
+<th>Target</th>
+</tr>
+<%
+veb.setOut(out);
+String distid=(String)session.getAttribute("distid");
+String divid=(String)session.getAttribute("divid");
+String mandalid=(String)session.getAttribute("mandalid");
+String villageid=(String)session.getAttribute("villageid");
+veb.setDistid(Integer.parseInt(distid));
+veb.setDivid(Integer.parseInt(divid));
+veb.setMandalid(Integer.parseInt(mandalid));
+veb.setVillageid(Integer.parseInt(villageid));
+veb.soloreport();
+%>
+<tr><td colspan=15 align=middle class=pass><a href="GLogin.jsp" class="a1">Home</a></td></tr>
+</table>
+</td></tr></table>

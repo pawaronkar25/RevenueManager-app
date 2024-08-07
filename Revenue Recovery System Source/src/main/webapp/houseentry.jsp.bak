@@ -1,0 +1,99 @@
+<html>
+<style type="text/css" title="currentStyle" media="screen">
+		@import "design.css";
+
+</style>
+<script>
+function reload()
+{
+	document.f1.action="houseentry.jsp";
+	document.f1.submit();
+}
+function check()
+{
+	var houseno;
+	houseno=document.f1.houseno.value;
+	if(houseno=="")
+	{
+		alert('House Number Not Entered');
+		document.f1.houseno.focus();
+		return false;
+	}
+	return true;
+}
+</script>
+<jsp:include page="sidepanel.html"/><br><br><br>
+<jsp:useBean id="bean1" class="com.rr.beans.DistLoadBean"/>
+<jsp:useBean id="bean2" class="com.rr.beans.DivLoadBean"/>
+<jsp:useBean id="bean3" class="com.rr.beans.MandalLoadBean"/>
+<jsp:useBean id="bean4" class="com.rr.beans.VlgLoadBean"/>
+<form name="f1" onsubmit="return check()" action="housesave.jsp">
+<br><br><br>
+<table border=1 width=50% align=center class="t4">
+<tr><td>
+<table width=100% align=center border=0 class="t4">
+<caption>House Entry</caption>
+	<tr>
+		<td><br>District Name</td>
+		<td class="t1"><br><select name="distid" onchange="reload()">
+		<option value=0>[Select District]</option>
+		<%
+
+			String distid=request.getParameter("distid");
+			String divid=request.getParameter("divid");
+			String mandalid=request.getParameter("mandalid");
+			bean1.setOut(out);
+			bean2.setOut(out);
+			bean3.setOut(out);
+			bean4.setOut(out);
+			if(distid==null && divid==null && mandalid==null)
+			{
+			bean1.load();
+			bean2.load(0);
+			bean3.load(0,0);
+			bean4.load(0,0,0);
+			}
+			else if(divid==null)
+			{
+			out.println("<script>alert('IF-2');</script>");
+			bean2.load(distid);
+			bean2.load(Integer.parseInt(distid));
+			bean3.load(Integer.parseInt(distid),1);
+			}
+			else
+			{
+			bean4.load(distid,divid,mandalid);
+			bean4.load(Integer.parseInt(distid),Integer.parseInt(divid),Integer.parseInt(mandalid));
+			}
+		%>
+		</td>
+	</tr>
+	<tr>
+		<td>Door Number</td>
+		<td class="t1"><INPUT TYPE="text" NAME="houseno"></td>
+	</tr>
+	<tr>
+		<td>Area Type</td>
+		<td class="t1">
+		<INPUT TYPE="radio" name="type" value="R" class="rad">Residential 
+     	<INPUT TYPE="radio" name="type" value="C" class="rad">Commercial
+		</td>
+	</tr>
+	<tr>
+		<td>Water Connection</td>
+		<td class="t1">
+		<INPUT TYPE="radio" name="water" value="true" class="rad" selected>Yes
+     	<INPUT TYPE="radio" name="water" value="false" class="rad">No
+		</td>
+	</tr>
+
+	<tr> 
+	<td colspan=2><br>
+	<center>
+	<INPUT TYPE="submit" value="Insert">
+	<INPUT TYPE="reset" value="Reset">
+	</center></td>
+	</tr>
+</table>
+</form>
+</html>
